@@ -15,6 +15,7 @@ cryptsetup
 device-mapper
 dhcpcd
 diffutils
+dunst
 e2fsprogs
 fakeroot
 feh
@@ -71,11 +72,13 @@ pcmciautils
 perl
 pkg-config
 playerctl
+poedit
 procps-ng
 psmisc
 pulseaudio
 reiserfsprogs
 rofi
+rsync
 rxvt-unicode
 s-nail
 screenfetch
