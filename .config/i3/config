@@ -101,7 +101,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t Uwaga -m 'Nacisnąłeś skrót wyjścia z i3. Czy na pewno chcesz to zrobić? To zakończy X session.' -b 'Tak, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t Uwaga -m 'Nacisnąłeś skrót wyjścia z i3. Czy na pewno chcesz to zrobić? To zakończy X session.' -b 'Tak, wyjdź z i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
