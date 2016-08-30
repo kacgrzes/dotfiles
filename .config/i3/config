@@ -151,7 +151,6 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # STARTUP
-exec urxvt
 exec chromium
 exec_always feh --bg-fill /home/kiper/Pictures/screen.png
 exec compton -f
