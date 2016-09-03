@@ -152,5 +152,6 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # STARTUP
 exec chromium
-exec_always feh --bg-fill /home/kiper/Pictures/screen.png
+exec_always feh --bg-fill /home/kiper/Pictures/wallpaper-1.png
+exec xautolock -time 15 -locker '~/bin/lock.sh'
 exec compton -f
