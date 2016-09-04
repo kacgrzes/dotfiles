@@ -14,6 +14,5 @@ compinit
 
 # My lines
 eval $(thefuck --alias)
-eval $(grunt --completion=zsh)
 export PATH="$HOME/bin:$PATH"			# Bash scripts
 export PATH="$HOME/.node_modules/bin:$PATH"	# Node scripts
