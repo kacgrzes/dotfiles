@@ -1,5 +1,5 @@
 alsa-utils
-atom-editor
+arandr
 autoconf
 automake
 bash
@@ -63,16 +63,14 @@ npm
 nvidia
 openssh
 pacman
-paper-gtk-theme-git
-paper-icon-theme-git
 patch
 pavucontrol
 pciutils
 pcmciautils
 perl
 pkg-config
-playerctl
 poedit
+powerline
 procps-ng
 psmisc
 pulseaudio
@@ -85,7 +83,6 @@ screenfetch
 scrot
 sed
 shadow
-slack-desktop
 sudo
 sysfsutils
 systemd-sysvcompat
@@ -97,8 +94,9 @@ usbutils
 util-linux
 vi
 vim
-webstorm
+vlc
 which
+xautolock
 xbindkeys
 xclip
 xfsprogs
