@@ -1,5 +1,16 @@
 set $mod Mod4
 
+set $gray1 #373d48
+set $gray2 #29303a
+
+new_window pixel 3
+focus_follows_mouse  no
+force_focus_wrapping yes
+
+client.focused            $gray1   $gray1   #FFFFFF   $gray1
+client.focused_inactive   $gray2   $gray2   #FFFFFF   #000000
+client.unfocused          $gray2   $gray2   #FFFFFF   #000000
+
 # Font
 font pango:DejaVu Sans 8
 
@@ -7,7 +18,7 @@ font pango:DejaVu Sans 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -64,6 +75,7 @@ bindsym $mod+a focus parent
 
 # workspace variables
 set $ws1 "1: General"
+set $ws0 "10: Music"
 
 # color variables
 set $bg-color #2f343f
@@ -79,7 +91,7 @@ bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+0 workspace $ws0
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -91,10 +103,11 @@ bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+0 move container to workspace $ws0
 
 # workspace assignment
 # assign [class=""] $ws1
+assign [class="sporify"] $ws0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -132,8 +145,14 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command i3status --config ~/.i3status.conf
 	position top
+	colors {
+		statusline #AAAAAA
+		background $gray2
+		focused_workspace $gray2 $gray2 #FFFFFF
+		inactive_workspace $gray1 $gray1 #AAAAAA	
+	}
 }
 
 bindsym $mod+l exec lock.sh
