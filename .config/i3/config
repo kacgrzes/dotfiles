@@ -154,6 +154,7 @@ bar {
 		focused_workspace $gray2 $gray2 #FFFFFF
 		inactive_workspace $gray1 $gray1 #AAAAAA	
 	}
+	separator_symbol " | "
 }
 
 bindsym $mod+l exec lock.sh
