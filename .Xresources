@@ -8,13 +8,11 @@ URxvt.depth: 32
 URxvt.geometry: 80x24
 URxvt.transparent: false
 URxvt.fading: 0
-! URxvt.urgentOnBell: true
-! URxvt.visualBell: true
 URxvt.loginShell: true
 URxvt.saveLines: 50
 URxvt.internalBorder: 3
 URxvt.lineSpace: 0
- 
+
 ! Fonts
 URxvt.font: xft:monospace:size=10
  
