@@ -7,6 +7,7 @@ general {
 }
 
 order += "volume master"
+order += "volume fiio"
 order += "load"
 order += "cpu_usage"
 order += "disk /"
@@ -14,10 +15,15 @@ order += "ethernet enp3s0"
 order += "tztime local"
 
 volume master {
-	format = " ♪: %volume  "
-	device = "default"
-	mixer = "Master"
-	mixer_idx = 0
+	format = " hi-fi  ♪: %volume  "
+	format_muted = " hi-fi  ♪: muted  "
+	device = "pulse:1"
+}
+
+volume fiio {
+	format = " fiio  ♪: %volume  "
+	format_muted = " fiio  ♪: muted  "
+	device = "pulse:0"
 }
 
 load {
@@ -38,5 +44,5 @@ ethernet enp3s0 {
 }
 
 tztime local {
-	format = "%h-%d %H:%M"
+	format = "%d %h %Y  %H:%M"
 }
