@@ -1,7 +1,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100000
+SAVEHIST=100000
 setopt beep extendedglob
 bindkey -e
 # End of lines configured by zsh-newuser-install
@@ -11,6 +11,9 @@ zstyle :compinstall filename '/home/kiper/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# Aliases
+alias kodilla="cd /home/kiper/Projects/Kodilla"
 
 # My lines
 eval $(thefuck --alias)
